@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WatchFace width="450" height="450">
+    <Scene backgroundColor="#000000">
+        <DigitalClock x="25" y="145" width="400" height="85">
+            <TimeText x="0" y="0" width="400" height="85" format="HH:mm:ss">
+                <Font family="sans-serif" size="66" weight="NORMAL" color="#66CC33"/>
+            </TimeText>
+        </DigitalClock>
+
+        <PartText x="25" y="245" width="400" height="50">
+            <Text align="CENTER">
+                <Font family="sans-serif" size="32" color="#66CC33">
+                    <Template>%s<Parameter expression="[DAY_OF_WEEK_S]"/></Template>
+                </Font>
+            </Text>
+        </PartText>
+
+        <PartText x="25" y="305" width="400" height="45">
+            <Text align="CENTER">
+                <Font family="sans-serif" size="28" color="#66CC33">
+                    <Template>%02d.%02d.%04d<Parameter expression="[DAY]"/><Parameter expression="[MONTH]"/><Parameter expression="[YEAR]"/></Template>
+                </Font>
+            </Text>
+        </PartText>
+    </Scene>
+</WatchFace>
