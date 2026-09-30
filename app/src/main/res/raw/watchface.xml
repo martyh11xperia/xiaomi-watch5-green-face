@@ -8,27 +8,27 @@
     </ColorConfiguration>
   </UserConfigurations>
   <Scene backgroundColor="#000000">
-    <DigitalClock x="15" y="120" width="420" height="100">
+    <Group x="0" y="0" width="450" height="450" tintColor="[CONFIGURATION.faceColor.0]">
       <Variant mode="AMBIENT" target="alpha" value="0"/>
-      <TimeText x="0" y="0" width="420" height="100" format="hh:mm:ss" hourFormat="24" align="CENTER">
-        <Font family="SYNC_TO_DEVICE" size="76" weight="BOLD" color="[CONFIGURATION.faceColor]"/>
-      </TimeText>
-    </DigitalClock>
-    <PartText x="20" y="235" width="410" height="60">
-      <Variant mode="AMBIENT" target="alpha" value="0"/>
-      <Text align="CENTER">
-        <Font family="SYNC_TO_DEVICE" size="40" weight="BOLD" color="[CONFIGURATION.faceColor]">
-          <Template>%s<Parameter expression="[DAY_OF_WEEK_F]"/></Template>
-        </Font>
-      </Text>
-    </PartText>
-    <PartText x="20" y="300" width="410" height="55">
-      <Variant mode="AMBIENT" target="alpha" value="0"/>
-      <Text align="CENTER">
-        <Font family="SYNC_TO_DEVICE" size="34" weight="BOLD" color="[CONFIGURATION.faceColor]">
-          <Template>%02d.%02d.%04d<Parameter expression="[DAY]"/><Parameter expression="[MONTH]"/><Parameter expression="[YEAR]"/></Template>
-        </Font>
-      </Text>
-    </PartText>
+      <DigitalClock x="15" y="120" width="420" height="100">
+        <TimeText x="0" y="0" width="420" height="100" format="hh:mm:ss" hourFormat="24" align="CENTER">
+          <Font family="SYNC_TO_DEVICE" size="76" weight="BOLD" color="#FFFFFF"/>
+        </TimeText>
+      </DigitalClock>
+      <PartText x="20" y="235" width="410" height="60">
+        <Text align="CENTER">
+          <Font family="SYNC_TO_DEVICE" size="40" weight="BOLD" color="#FFFFFF">
+            <Template>%s<Parameter expression="[DAY_OF_WEEK_F]"/></Template>
+          </Font>
+        </Text>
+      </PartText>
+      <PartText x="20" y="300" width="410" height="55">
+        <Text align="CENTER">
+          <Font family="SYNC_TO_DEVICE" size="34" weight="BOLD" color="#FFFFFF">
+            <Template>%02d.%02d.%04d<Parameter expression="[DAY]"/><Parameter expression="[MONTH]"/><Parameter expression="[YEAR]"/></Template>
+          </Font>
+        </Text>
+      </PartText>
+    </Group>
   </Scene>
 </WatchFace>
