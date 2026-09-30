@@ -10,9 +10,9 @@
   <Scene backgroundColor="#000000">
     <Group x="0" y="0" width="450" height="450" tintColor="[CONFIGURATION.faceColor.0]">
       <Variant mode="AMBIENT" target="alpha" value="0"/>
-      <DigitalClock x="15" y="120" width="420" height="100">
-        <TimeText x="0" y="0" width="420" height="100" format="hh:mm:ss" hourFormat="24" align="CENTER">
-          <Font family="SYNC_TO_DEVICE" size="76" weight="BOLD" color="#FFFFFF"/>
+      <DigitalClock x="10" y="120" width="430" height="100">
+        <TimeText x="0" y="0" width="430" height="100" format="hh:mm:ss" hourFormat="24" align="CENTER">
+          <Font family="SYNC_TO_DEVICE" size="76" weight="BLACK" color="#FFFFFF"/>
         </TimeText>
       </DigitalClock>
       <PartText x="20" y="235" width="410" height="60">
